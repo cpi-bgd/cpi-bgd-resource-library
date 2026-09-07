@@ -38,8 +38,12 @@ libraries** (R5). Do not propose HAPI, even "for testing."
 
 ## Gaps to close (planned)
 
-- FHIR profiles (structure definitions) for CPI-BGD registers — deferred to ZarishSphere phase.
-- Terminology bindings (ValueSets) for camp-specific concepts (FCN, ProGres ID, sub-block).
+- FHIR profiles (structure definitions) for CPI-BGD registers — **Phase 3, in progress**:
+  start from `models/zarishsphere-blueprint.md` + `his-resource-map.md`; check
+  `registry.fhir.org` before authoring custom profiles.
+- Terminology bindings (ValueSets) for camp-specific concepts (FCN, ProGres ID, sub-block) —
+  **Phase 3, in progress**: see `camp-terminology.md` (local code systems under
+  `https://zs.cpi-bgd.org/codesystem/`; no invented LOINC/SNOMED/ICD codes).
 
 ---
 

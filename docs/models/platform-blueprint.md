@@ -102,10 +102,11 @@ Legend: `#D0C4C5` Source / input · `#D91E4D` Data / register · `#615E9B` Outpu
   operator builds/deploys the workbook). STATUS: design complete, deployment pending.
 - Phase 2 — Operations domains (staff, warehouse, monitoring, reporting templates designed;
   operator builds the workbooks). STATUS: in progress.
-- Phase 2 — Operations domains (staff, warehouse, monitoring, reporting).
-- Phase 3 — ZarishSphere FHIR R5 HIS integration (feeds from hub mappings).
+- Phase 3 — ZarishSphere FHIR R5 HIS (design: blueprint + resource map + camp terminology done;
+  ingestion bridge + profiles next). STATUS: in progress.
 
-See `docs/rollout-plan.md` for the live progress tracker.
+See `docs/rollout-plan.md` for the live progress tracker and
+`models/zarishsphere-blueprint.md` for the HIS architecture.
 
 ---
 
