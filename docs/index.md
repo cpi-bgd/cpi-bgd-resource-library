@@ -1,7 +1,3 @@
----
-template: index
----
-
 # CPI-BGD Resource Library
 
 Adapted **FHIR / HL7 / WHO / DHIS2** standards, CPI-branded templates, and system models for
