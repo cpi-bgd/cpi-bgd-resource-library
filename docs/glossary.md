@@ -83,6 +83,15 @@ Keep definitions plain-language (accessibility #5 of the brand tone of voice).
 | OpenAPI | Open API Initiative spec | Machine-readable API description format. |
 | JSON / YAML / CSV | JavaScript Object Notation / YAML Aint Markup Language / Comma-Separated Values | Structured data formats used for document-as-code. |
 | ZUSS | ZarishSphere Universal Serialization Standard | CPI-BGD house convention for naming/formatting files and headers. |
+| zs-fhir-go | — | The planned Go-native single-binary FHIR R5 server of the ZarishSphere HIS (blueprint decision #2). |
+| Server spike | — | Time-boxed, evidence-first investigation that validates a build choice before committing (e.g., the FHIR engine pick). |
+| Bundle | FHIR Bundle | Container that carries multiple FHIR resources in one exchange; used by the ingestion bridge for bulk export. |
+| Apps Script | Google Apps Script | Free JavaScript-based automation platform embedded in Google Workspace (Sheets/Drive). |
+| Staging register | Staging register | A Sheets view/worksheet holding register data shaped for export; the bridge reads from staging, never from live entry sheets. |
+| Ingestion bridge | Ingestion bridge | The exporter that turns Sheets register data into FHIR Bundles for the ZarishSphere HIS (Phase 3.6). |
+| IMPORTRANGE | — | Sheets function referencing a range from another workbook; basis of the staging register view. |
+| MMS | ICD-11 Mortality and Morbidity Statistics | Core ICD-11 classification used for diagnoses (primary bind in CPI-BGD). |
+| PII | Personally identifiable information | Data that can identify an individual; never written to the repo. |
 
 ## Diagramming and document-as-code
 
