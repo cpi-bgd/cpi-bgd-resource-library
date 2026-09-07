@@ -13,8 +13,10 @@ metadata:
 
 # Glossary of terms and abbreviations
 
-Add new terms/acronyms to this table before using them in any document. Keep definitions
-plain-language (accessibility #5 of the brand tone of voice).
+Add new terms/acronyms to this table before using them in any document. Every document ends
+with its own Glossary section; on lightweight hub pages (like the intranet snippet or a page
+that only links to the master glossary), a link to this master list satisfies the convention.
+Keep definitions plain-language (accessibility #5 of the brand tone of voice).
 
 ## Organizations and roles
 
@@ -104,8 +106,8 @@ plain-language (accessibility #5 of the brand tone of voice).
 |---|---|---|
 | CC BY 4.0 | Creative Commons Attribution 4.0 International | Open license for docs; requires attribution. |
 | Apache 2.0 | Apache License, Version 2.0 | Permissive open-source license for code/config. |
-| GDPR | General Data Protection Regulation | EU data-protection regulation (user cites it for the HIS spec). |
-| HIPAA | Health Insurance Portability and Accountability Act | US health-data privacy rule (user cites it for the HIS spec). |
+| GDPR | General Data Protection Regulation | EU data-protection regulation applicable to any EU-person data the platform holds; verify scope against `resources/verified-resource-index.md` before relying on it. |
+| HIPAA | Health Insurance Portability and Accountability Act | US health-data privacy rule listed in the HIS design scope; obligations depend on the covered-entity relationship — verify before asserting applicability. |
 
 ---
 

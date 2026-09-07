@@ -82,7 +82,7 @@ flowchart LR
   class S,Rep a
 ```
 
-Legend: `#D0C4C5` Source · `#D91E4D` Data / register · `#615E9B` Actor / output.
+Legend: `#D0C4C5` Source / input · `#D91E4D` Data / register · `#615E9B` Output / deliverable.
 
 ## Scalability swap-points
 

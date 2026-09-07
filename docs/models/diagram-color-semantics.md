@@ -21,8 +21,10 @@ metadata:
 | Free serverless layer (L2) | CPI Teal | `#4298B5` | `Serverless layer` |
 | Data stores / registers | CPI Red | `#D91E4D` | `Data / register` |
 | Actors / roles (CHW, nurse, MEAL) | CPI Purple Secondary | `#615E9B` | `Actor / role` |
+| Output / deliverable (report, plan) | CPI Purple Secondary | `#615E9B` | `Output / deliverable` |
 | External systems (DHIS2, YPSA, WHO, UNHCR) | CPI Mid Grey | `#948794` | `External system` |
 | Decision / branch | CPI Red accent on `#FFFFFF` fill | `#D91E4D` | `Decision` |
+| Source / input (paper, raw material) | CPI Light Grey | `#D0C4C5` | `Source / input` |
 | Neutral / default node | CPI Light Grey | `#D0C4C5` | `Neutral` |
 
 ## Mandatory legend rule
@@ -90,9 +92,11 @@ digraph G {
 
 1. Never substitute colors outside `cpi-bgd-branding/core/colors.json`.
 2. Never convey meaning by color alone.
-3. Choose the darkest fill for white text; on CPI Light Grey `#D0C4C5` use CPI Black `#2D2926`
-   text for contrast.
-4. Chart sequences (multiple data series) follow the brand chart order: `#D91E4D` → `#41273B`
+3. Pick the fill/text pair that keeps WCAG 2.1 AA contrast: white text on `#41273B`, `#D91E4D`,
+   `#615E9B`, `#4298B5`, `#948794`; CPI Black `#2D2926` text on `#D0C4C5` and `#FFFFFF`.
+4. Use exactly one semantic row per node; if two labels apply, choose the more specific row
+   (`Output / deliverable` for a report/plan node, `Source / input` for a paper/material node).
+5. Chart sequences (multiple data series) follow the brand chart order: `#D91E4D` → `#41273B`
    → `#4298B5` → `#615E9B` → `#948794` → `#D0C4C5`.
 
 ---
