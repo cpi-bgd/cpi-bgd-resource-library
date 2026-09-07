@@ -56,13 +56,13 @@ Legend: `#41273B` Workspace layer · `#4298B5` Serverless layer · `#D91E4D` Dat
 |---|---|---|---|
 | 1 | Program operations | Sheets registers + Forms | Grist-style relational (serverless) |
 | 2 | Program development | Docs + Sites + Gemini AI Studio | GitHub org per program |
-| 3 | Realtime monitoring | Forms/Kobo → Sheets → Looker Studio | Supabase/Firebase realtime |
-| 4 | Staff management | Directory + Groups + Sheets register | Serverless HR module |
+| 3 | Realtime monitoring | Forms/Kobo → staging → aggregate → Looker (pipeline built in Phase 2) | Supabase/Firebase realtime |
+| 4 | Staff management | Directory + Groups + Sheets register (built in Phase 2) | Serverless HR module |
 | 5 | Grant management (full lifecycle) | Grant workbook (Pipeline/Budget/Deliverables/Compliance/Donor Reports) + Apps Script + Looker — replaces Monday.com | Relational grant DB |
-| 6 | Reporting | Looker Studio + Docs + Apps Script email | Scheduled Workers / Actions |
+| 6 | Reporting | Report calendar + scheduled assembler (built in Phase 2) + Looker | Scheduled Workers / Actions |
 | 7 | Collaboration | Chat Spaces + Drive + Meet | — |
 | 8 | Team management | Groups + Shared Drives + Spaces | — |
-| 9 | Warehouse / inventory | Sheets stock cards + low-stock alerts | Relational inventory on serverless |
+| 9 | Warehouse / inventory | Stock cards: item master + movements + low-stock/expiry alerts (built in Phase 2) | Relational inventory on serverless |
 
 ## Data-flow spine (tally → aggregate → report)
 
@@ -98,8 +98,10 @@ Legend: `#D0C4C5` Source / input · `#D91E4D` Data / register · `#615E9B` Outpu
 ## Rollout phases
 
 - Phase 0 — Resource Hub foundation (this repo + public Pages site). STATUS: complete (v0.1.0).
-- Phase 1 — Grant management, full lifecycle (template system designed; deployment = build the
-  workbook + Apps Script in Workspace). STATUS: in progress.
+- Phase 1 — Grant management, full lifecycle (template + scripts + migration manifest designed;
+  operator builds/deploys the workbook). STATUS: design complete, deployment pending.
+- Phase 2 — Operations domains (staff, warehouse, monitoring, reporting templates designed;
+  operator builds the workbooks). STATUS: in progress.
 - Phase 2 — Operations domains (staff, warehouse, monitoring, reporting).
 - Phase 3 — ZarishSphere FHIR R5 HIS integration (feeds from hub mappings).
 
