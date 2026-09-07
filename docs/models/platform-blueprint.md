@@ -58,7 +58,7 @@ Legend: `#41273B` Workspace layer · `#4298B5` Serverless layer · `#D91E4D` Dat
 | 2 | Program development | Docs + Sites + Gemini AI Studio | GitHub org per program |
 | 3 | Realtime monitoring | Forms/Kobo → Sheets → Looker Studio | Supabase/Firebase realtime |
 | 4 | Staff management | Directory + Groups + Sheets register | Serverless HR module |
-| 5 | Grant management (full lifecycle) | Sheet tracker replacing Monday.com | Relational grant DB |
+| 5 | Grant management (full lifecycle) | Grant workbook (Pipeline/Budget/Deliverables/Compliance/Donor Reports) + Apps Script + Looker — replaces Monday.com | Relational grant DB |
 | 6 | Reporting | Looker Studio + Docs + Apps Script email | Scheduled Workers / Actions |
 | 7 | Collaboration | Chat Spaces + Drive + Meet | — |
 | 8 | Team management | Groups + Shared Drives + Spaces | — |
@@ -92,13 +92,14 @@ Legend: `#D0C4C5` Source / input · `#D91E4D` Data / register · `#615E9B` Outpu
 | Apps Script cron | 6 min runtime / 100k fetches per day | GitHub Actions (2,000 min/mo private) |
 | Forms polling | need offline + validation | KoboToolbox (25k sub/mo free) |
 | Manual report assembly | recurring every month | workflow in Sheets + Looker + Docs |
-| Monday.com CPMS | — (paid, being replaced) | grant tracker built in Phase 1 |
+| Monday.com CPMS | — (paid, replaced) | Phase 1 grant workbook: Pipeline/Budget/Deliverables/Compliance/Donor Reports |
 | ActivityInfo 4W | — (paid, being replaced) | Sheets + Forms + Looker 4W matrix |
 
 ## Rollout phases
 
-- Phase 0 — Resource Hub foundation (this repo + public Pages site). STATUS: in progress.
-- Phase 1 — Grant management, full lifecycle.
+- Phase 0 — Resource Hub foundation (this repo + public Pages site). STATUS: complete (v0.1.0).
+- Phase 1 — Grant management, full lifecycle (template system designed; deployment = build the
+  workbook + Apps Script in Workspace). STATUS: in progress.
 - Phase 2 — Operations domains (staff, warehouse, monitoring, reporting).
 - Phase 3 — ZarishSphere FHIR R5 HIS integration (feeds from hub mappings).
 
