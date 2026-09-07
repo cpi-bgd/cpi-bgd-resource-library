@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "zc-camp-block",
+  "url": "https://zs.cpi-bgd.org/codesystem/zc-camp-block",
+  "version": "1.0.0",
+  "name": "ZCCampBlock",
+  "title": "CPI-BGD camp sub-block",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Camp sub-block codes from the site master list (cpi-bgd-mission-context). Codes are NOT enumerated here on purpose \u2014 the master lives in the mission-context skill. Content not-present per FHIR.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "content": "not-present",
+  "caseSensitive": true
+}

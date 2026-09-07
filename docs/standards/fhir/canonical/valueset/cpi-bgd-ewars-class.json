@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cpi-bgd-ewars-class",
+  "url": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-ewars-class",
+  "version": "1.0.0",
+  "name": "CPIBGDEwarsClass",
+  "title": "CPI-BGD EWARS case class",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Bound to Observation interpretation / line-list case class. Dual-reporting linkage to EWARS.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://zs.cpi-bgd.org/codesystem/zc-ewars-case",
+        "concept": [
+          {
+            "code": "SUSPECTED"
+          },
+          {
+            "code": "PROBABLE"
+          },
+          {
+            "code": "CONFIRMED"
+          },
+          {
+            "code": "DISCARDED"
+          }
+        ]
+      }
+    ]
+  }
+}

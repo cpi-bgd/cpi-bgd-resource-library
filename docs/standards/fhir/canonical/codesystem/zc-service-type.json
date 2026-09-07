@@ -1,0 +1,67 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "zc-service-type",
+  "url": "https://zs.cpi-bgd.org/codesystem/zc-service-type",
+  "version": "1.0.0",
+  "name": "ZCServiceType",
+  "title": "CPI-BGD service type",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Service types offered at CPI-BGD facilities / HOP, bound to Encounter.serviceType. Source: camp-terminology.md.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "OPD",
+      "display": "Outpatient department"
+    },
+    {
+      "code": "ANC",
+      "display": "Antenatal care"
+    },
+    {
+      "code": "PNC",
+      "display": "Postnatal care"
+    },
+    {
+      "code": "NCD",
+      "display": "Non-communicable disease care"
+    },
+    {
+      "code": "LAB",
+      "display": "Laboratory"
+    },
+    {
+      "code": "EPI",
+      "display": "Immunization / EPI"
+    },
+    {
+      "code": "HOP-HOME-VISIT",
+      "display": "Health Outreach Program home visit"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cpi-bgd-vitals-loinc",
+  "url": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-vitals-loinc",
+  "version": "1.0.0",
+  "name": "CPIBGDVitalsLOINC",
+  "title": "CPI-BGD vitals and lab observations (LOINC)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Verified LOINC codes from hf418-diagnosis-dictionary.md \u00a72, bound to Observation.code in the zs-observation profile.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "code": "39156-5",
+            "display": "Body mass index (BMI) [Ratio]"
+          },
+          {
+            "code": "4548-4",
+            "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "8867-4",
+            "display": "Heart rate"
+          },
+          {
+            "code": "2345-7",
+            "display": "Glucose [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "59408-5",
+            "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+          },
+          {
+            "code": "9279-1",
+            "display": "Respiratory rate"
+          },
+          {
+            "code": "8310-5",
+            "display": "Body temperature"
+          },
+          {
+            "code": "8302-2",
+            "display": "Body height"
+          },
+          {
+            "code": "29463-7",
+            "display": "Body weight"
+          },
+          {
+            "code": "1558-6",
+            "display": "Fasting glucose [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -55,6 +55,7 @@ nav:
   - Standards:
       - standards/index.md
       - FHIR: standards/fhir.md
+      - FHIR canonical artifacts: standards/fhir/canonical/index.md
       - HL7: standards/hl7.md
       - WHO: standards/who.md
       - DHIS2: standards/dhis2.md
@@ -62,4 +63,5 @@ nav:
   - Models:
       - Platform blueprint: models/platform-blueprint.md
       - Diagram color semantics: models/diagram-color-semantics.md
+      - FHIR server spike: models/fhir-server-spike.md
   - Glossary: glossary.md

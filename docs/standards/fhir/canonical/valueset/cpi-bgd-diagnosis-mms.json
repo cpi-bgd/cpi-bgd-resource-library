@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cpi-bgd-diagnosis-mms",
+  "url": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-diagnosis-mms",
+  "version": "1.0.0",
+  "name": "CPIBGDDiagnosisMMS",
+  "title": "CPI-BGD diagnosis codes (ICD-11 MMS)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Verified ICD-11 MMS codes from hf418-diagnosis-dictionary.md \u00a71 (surveillance + NCD). Primary diagnosis bind for Condition.code.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://id.who.int/icd/release/11/mms",
+        "concept": [
+          {
+            "code": "1A40.Z",
+            "display": "Infectious gastroenteritis or colitis without specification of infectious agent"
+          },
+          {
+            "code": "1E50.Z",
+            "display": "Acute viral hepatitis, unspecified"
+          },
+          {
+            "code": "1E32",
+            "display": "Influenza, virus not identified"
+          },
+          {
+            "code": "1F03",
+            "display": "Measles"
+          },
+          {
+            "code": "1C17",
+            "display": "Diphtheria"
+          },
+          {
+            "code": "BA00.Z",
+            "display": "Essential hypertension, unspecified"
+          },
+          {
+            "code": "5A11",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "zc-camp-site",
+  "url": "https://zs.cpi-bgd.org/codesystem/zc-camp-site",
+  "version": "1.0.0",
+  "name": "ZCCampSite",
+  "title": "CPI-BGD camp / facility site",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Camps and facility sites where CPI-BGD delivers care (Camp 1W, NCD Corners Camps 5 & 17, Health Facility HF-418). Source: camp-terminology.md.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "1W",
+      "display": "Camp 1W"
+    },
+    {
+      "code": "5",
+      "display": "Camp 5"
+    },
+    {
+      "code": "17",
+      "display": "Camp 17"
+    },
+    {
+      "code": "HF-418",
+      "display": "Health Facility 418"
+    }
+  ]
+}

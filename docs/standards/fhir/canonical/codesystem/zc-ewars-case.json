@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "zc-ewars-case",
+  "url": "https://zs.cpi-bgd.org/codesystem/zc-ewars-case",
+  "version": "1.0.0",
+  "name": "ZCEwarsCase",
+  "title": "CPI-BGD EWARS case class",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "EWARS/IDSR case classification for surveillance line lists. Labels aligned with WHO EWARS case definitions. Source: camp-terminology.md.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "SUSPECTED",
+      "display": "Suspected"
+    },
+    {
+      "code": "PROBABLE",
+      "display": "Probable"
+    },
+    {
+      "code": "CONFIRMED",
+      "display": "Confirmed"
+    },
+    {
+      "code": "DISCARDED",
+      "display": "Discarded"
+    }
+  ]
+}

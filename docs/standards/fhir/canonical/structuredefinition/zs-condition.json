@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "zs-condition",
+  "url": "https://zs.cpi-bgd.org/fhir/StructureDefinition/zs-condition",
+  "version": "1.0.0",
+  "name": "ZsCondition",
+  "title": "CPI-BGD Condition",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Diagnosis profile. Condition.code bound (extensible) to the verified ICD-11 MMS set; extensible to other WHO MMS codes as they are verified.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 1,
+        "max": "*",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-diagnosis-mms"
+        }
+      }
+    ]
+  }
+}

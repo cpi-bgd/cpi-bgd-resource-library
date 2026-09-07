@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "zc-camp-origin",
+  "url": "https://zs.cpi-bgd.org/codesystem/zc-camp-origin",
+  "version": "1.0.0",
+  "name": "ZCCampOrigin",
+  "title": "CPI-BGD camp origin",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Population origin of a patient served in the Cox's Bazar camp context (Rohingya / Bangladeshi / Others). Source: camp-terminology.md.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "R",
+      "display": "Rohingya"
+    },
+    {
+      "code": "B",
+      "display": "Bangladeshi"
+    },
+    {
+      "code": "O",
+      "display": "Others"
+    }
+  ]
+}

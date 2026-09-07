@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cpi-bgd-identifier-type",
+  "url": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-identifier-type",
+  "version": "1.0.0",
+  "name": "CPIBGDIdentifierType",
+  "title": "CPI-BGD patient identifier type",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Patient identifier.type. Imports the published FHIR identifier-type ValueSet (v2-0203). ZS SID identifier systems (/sid/individual, /sid/service, /sid/visit, /sid/fcn, /sid/progres) are applied at Identifier.system level in the zs-patient profile, not as type codes here.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/identifier-type"
+        ]
+      }
+    ]
+  }
+}

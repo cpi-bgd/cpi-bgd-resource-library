@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "zs-observation",
+  "url": "https://zs.cpi-bgd.org/fhir/StructureDefinition/zs-observation",
+  "version": "1.0.0",
+  "name": "ZsObservation",
+  "title": "CPI-BGD Observation (vitals / line-list)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Observation profile for NCD vitals (LOINC) and surveillance line-list findings. interpretation carries the EWARS case class.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "min": 1,
+        "max": "*",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-vitals-loinc"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-ewars-class"
+        }
+      }
+    ]
+  }
+}

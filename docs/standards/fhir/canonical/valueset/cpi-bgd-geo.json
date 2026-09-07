@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cpi-bgd-geo",
+  "url": "https://zs.cpi-bgd.org/fhir/ValueSet/cpi-bgd-geo",
+  "version": "1.0.0",
+  "name": "CPIBGDGeo",
+  "title": "CPI-BGD camp geography",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-09-08",
+  "publisher": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+  "contact": [
+    {
+      "name": "Community Partners International (CPI) \u2014 Bangladesh Mission",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.cpintl.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Bound to Location.identifier / Location extension. Site codes enumerated; block codes from the site master (not-present).",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://zs.cpi-bgd.org/codesystem/zc-camp-site",
+        "concept": [
+          {
+            "code": "1W"
+          },
+          {
+            "code": "5"
+          },
+          {
+            "code": "17"
+          },
+          {
+            "code": "HF-418"
+          }
+        ]
+      },
+      {
+        "system": "https://zs.cpi-bgd.org/codesystem/zc-camp-block"
+      }
+    ]
+  }
+}
