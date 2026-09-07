@@ -1,0 +1,65 @@
+site_name: CPI-BGD Resource Library
+site_description: >-
+  Adapted FHIR/HL7/WHO/DHIS2 standards, branded templates, and system models for Community
+  Partners International (CPI) — Bangladesh Mission. The public face of the CPI-BGD Resource
+  Hub.
+site_url: https://cpi-bgd.github.io/cpi-bgd-resource-library/
+repo_url: https://github.com/cpi-bgd/cpi-bgd-resource-library
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: red
+    accent: purple
+  font:
+    text: Raleway
+    code: Roboto Mono
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - toc.follow
+  logo: assets/images/logo.svg
+
+extra_css:
+  - assets/stylesheets/brand.css
+
+extra_javascript:
+  - assets/js/mermaid-init.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+copyright: "CC BY 4.0 — Community Partners International (CPI) · www.cpintl.org"
+
+nav:
+  - Home: index.md
+  - Standards:
+      - standards/index.md
+      - FHIR: standards/fhir.md
+      - HL7: standards/hl7.md
+      - WHO: standards/who.md
+      - DHIS2: standards/dhis2.md
+  - Templates: templates/index.md
+  - Models:
+      - Platform blueprint: models/platform-blueprint.md
+      - Diagram color semantics: models/diagram-color-semantics.md
+  - Glossary: glossary.md

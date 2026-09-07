@@ -1,0 +1,47 @@
+:root {
+  --md-primary-fg-color: #D91E4D;
+  --md-primary-fg-color--dark: #41273B;
+  --md-accent-fg-color: #615E9B;
+  --cpi-black: #2D2926;
+  --cpi-mid-grey: #948794;
+  --cpi-light-grey: #D0C4C5;
+}
+
+.md-header {
+  background-color: #41273B;
+}
+
+.md-footer {
+  background-color: #2D2926;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #41273B;
+}
+
+.md-typeset table th {
+  background-color: #41273B;
+  color: #FFFFFF;
+}
+
+.md-typeset a {
+  color: #D91E4D;
+}
+
+.md-typeset code {
+  color: #41273B;
+}
+
+.md-typeset .admonition.note {
+  border-color: #4298B5;
+}
+
+.legend {
+  font-size: 0.8rem;
+  color: var(--cpi-mid-grey);
+}
