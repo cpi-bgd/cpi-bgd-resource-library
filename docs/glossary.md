@@ -64,6 +64,7 @@ Keep definitions plain-language (accessibility #5 of the brand tone of voice).
 | EWARS | Early Warning, Alert and Response System | WHO/Health Sector epidemic surveillance system for refugee camps. |
 | IDSR | Integrated Disease Surveillance and Response | National surveillance framework that EWARS feeds. |
 | R5 (FHIR R5) | FHIR Release 5 | Latest FHIR standard release used by the planned ZarishSphere HIS. |
+| StructureDefinition | — | FHIR resource defining a profile — the machine form of a conformance constraint on a base resource (e.g., zs-patient on Patient). |
 
 ## Standards and technical systems
 
