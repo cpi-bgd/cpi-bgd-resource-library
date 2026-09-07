@@ -93,6 +93,11 @@ Keep definitions plain-language (accessibility #5 of the brand tone of voice).
 | IMPORTRANGE | — | Sheets function referencing a range from another workbook; basis of the staging register view. |
 | MMS | ICD-11 Mortality and Morbidity Statistics | Core ICD-11 classification used for diagnoses (primary bind in CPI-BGD). |
 | PII | Personally identifiable information | Data that can identify an individual; never written to the repo. |
+| BD-Core | BD-Core-FHIR-IG | Bangladesh national FHIR Implementation Guide (DGHS/MoHFW, FHIR R4, live v0.4.6) — the national boundary CPI-BGD aligns to via the ingestion bridge. |
+| ICD-11 cluster | ICD-11 postcoordination expression | Postcoordinated ICD-11 code (`STEM&sat1&sat2`, e.g. `NC72.Z&XK8G`) carried by the BD-Core `icd11-cluster-expression` extension; validated at the national boundary. |
+| UHID | Unique Health Identifier | BD-Core's mandatory `1..1` national patient identifier slot (`http://dghs.gov.bd/identifier/uhid`) — refugee-camp patients lack it, so ZS uses `FCN`/`ProGres` internally. |
+| OCL | Open Concept Lab | Open-source terminology server; the national ICD-11/DGDA/mapping resolver at `tr.ocl.dghs.gov.bd` (`$validate-code`, `$lookup`; no `$expand`). |
+| DGDA | Directorate General of Drug Administration | Bangladesh drug regulator; its registry (39,196 products) codes medication nationally. |
 
 ## Diagramming and document-as-code
 
