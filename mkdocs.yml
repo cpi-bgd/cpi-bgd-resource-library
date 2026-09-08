@@ -59,7 +59,7 @@ nav:
       - HL7: standards/hl7.md
       - WHO: standards/who.md
       - DHIS2: standards/dhis2.md
-  - Templates: templates/index.md
+  - Templates: template-library/index.md
   - Models:
       - Platform blueprint: models/platform-blueprint.md
       - Diagram color semantics: models/diagram-color-semantics.md
