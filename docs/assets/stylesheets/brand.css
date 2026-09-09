@@ -161,6 +161,18 @@ body, .md-typeset {
   margin-bottom: 1rem;
 }
 
+.cpi-hero-logo {
+  display: block;
+  width: min(420px, 80%);
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  margin: 0 0 1.25rem 0;
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 0.6rem 0.9rem;
+}
+
 .cpi-hero-title {
   font-size: 2.2rem;
   font-weight: 900;

@@ -4,6 +4,12 @@
   <div class="cpi-hero-badge">
     <span>CPI BANGLADESH MISSION CONTROL · ZERO-BUDGET OPEN STACK</span>
   </div>
+  <img
+    src="assets/images/CPI_logo_h_RGB.png"
+    alt="Community Partners International (CPI) — Bangladesh Mission"
+    class="cpi-hero-logo"
+    loading="lazy"
+  />
   <div class="cpi-hero-title">
     Community Partners International <span>(CPI)</span>
   </div>
