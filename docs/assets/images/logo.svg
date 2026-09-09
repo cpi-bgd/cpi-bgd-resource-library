@@ -1,5 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="12" fill="#D91E4D"/>
-  <text x="32" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
-        fill="#FFFFFF" text-anchor="middle">CPI</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">
+  <defs>
+    <linearGradient id="cpiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D91E4D" />
+      <stop offset="100%" stop-color="#41273B" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D91E4D" />
+      <stop offset="100%" stop-color="#4298B5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas Frame (Transparent) -->
+  <rect width="520" height="120" fill="none"/>
+
+  <!-- Logo Mark Emblem (Human-Centered Interlocking Circles & Shield) -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield Boundary -->
+    <path d="M 50,5 C 75,5 95,20 95,45 C 95,75 50,95 50,95 C 50,95 5,75 5,45 C 5,20 25,5 50,5 Z" 
+          fill="#41273B" rx="10"/>
+    
+    <!-- Dynamic Red Accent Arc -->
+    <path d="M 50,12 C 70,12 85,25 85,45 C 85,68 50,84 50,84 C 50,84 15,68 15,45 C 15,25 30,12 50,12 Z" 
+          fill="none" stroke="#D91E4D" stroke-width="4.5"/>
+
+    <!-- Interlocking Community Circles (Symbolizing 97% Local Workforce & Partnership) -->
+    <circle cx="38" cy="42" r="14" fill="#D91E4D" opacity="0.9"/>
+    <circle cx="62" cy="42" r="14" fill="#4298B5" opacity="0.9"/>
+    <circle cx="50" cy="58" r="14" fill="#615E9B" opacity="0.95"/>
+    <circle cx="50" cy="48" r="6" fill="#FFFFFF"/>
+    
+    <!-- Top Spark Star (Humanitarian Care Light) -->
+    <polygon points="50,22 52,27 57,27 53,30 54,35 50,32 46,35 47,30 43,27 48,27" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Typography Section -->
+  <g transform="translate(120, 20)">
+    <!-- Primary CPI Acronym -->
+    <text x="0" y="38" font-family="'Raleway', 'Arial', sans-serif" font-weight="900" font-size="40" fill="#41273B" letter-spacing="1">
+      CPI
+    </text>
+    
+    <!-- Vertical Divider Line -->
+    <line x1="88" y1="8" x2="88" y2="72" stroke="#D91E4D" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Full Organization Name -->
+    <text x="102" y="24" font-family="'Raleway', 'Arial', sans-serif" font-weight="800" font-size="15" fill="#41273B" letter-spacing="0.5">
+      COMMUNITY PARTNERS
+    </text>
+    <text x="102" y="42" font-family="'Raleway', 'Arial', sans-serif" font-weight="800" font-size="15" fill="#D91E4D" letter-spacing="0.5">
+      INTERNATIONAL
+    </text>
+
+    <!-- Sub-heading & Mission Location -->
+    <text x="102" y="58" font-family="'Raleway', 'Arial', sans-serif" font-weight="600" font-size="11" fill="#615E9B" letter-spacing="1">
+      BANGLADESH MISSION · COX'S BAZAR
+    </text>
+
+    <!-- Tagline (Official CPI Brand Tagline) -->
+    <text x="0" y="78" font-family="'Raleway', 'Arial', sans-serif" font-weight="600" font-style="italic" font-size="11.5" fill="#948794">
+      "Empower communities. Transform lives."
+    </text>
+  </g>
 </svg>

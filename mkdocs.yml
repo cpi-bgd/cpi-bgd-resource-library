@@ -1,28 +1,50 @@
-site_name: CPI-BGD Resource Library
+site_name: CPI Bangladesh Mission Control — Resource Library
 site_description: >-
-  Adapted FHIR/HL7/WHO/DHIS2 standards, branded templates, and system models for Community
-  Partners International (CPI) — Bangladesh Mission. The public face of the CPI-BGD Resource
-  Hub.
+  Adapted FHIR R5 / HL7 / WHO / DHIS2 standards, primary healthcare register templates (SL-1..58),
+  and system architecture models for Community Partners International (CPI) — Bangladesh Mission
+  (Health Post HF-418, Camp 1W, Ukhiya, Cox's Bazar & HOP Community Network).
 site_url: https://cpi-bgd.github.io/cpi-bgd-resource-library/
 repo_url: https://github.com/cpi-bgd/cpi-bgd-resource-library
+repo_name: cpi-bgd/cpi-bgd-resource-library
 edit_uri: edit/main/docs/
 
 theme:
   name: material
   palette:
-    scheme: default
-    primary: red
-    accent: purple
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
     text: Raleway
-    code: Roboto Mono
+    code: JetBrains Mono
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.indexes
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
     - navigation.top
-    - search.suggest
+    - navigation.tracking
     - toc.follow
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
   logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
 
 extra_css:
   - assets/stylesheets/brand.css
@@ -31,37 +53,69 @@ extra_javascript:
   - assets/js/mermaid-init.js
   - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
 
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.cpintl.org
+      name: Community Partners International (CPI)
+    - icon: fontawesome/brands/github
+      link: https://github.com/cpi-bgd/cpi-bgd-resource-library
+      name: CPI Bangladesh GitHub Organization
+    - icon: fontawesome/solid/envelope
+      link: mailto:ariful@cpi-ypsa.org
+      name: CPI Health Program Manager Contact
+
 plugins:
   - search
 
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
+  - footnotes
+  - meta
   - tables
   - toc:
       permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
-copyright: "CC BY 4.0 — Community Partners International (CPI) · www.cpintl.org"
+copyright: >-
+  Copyright © 1998–2026 Community Partners International (CPI) · All Rights Reserved · CC BY 4.0 International · "Empower communities. Transform lives."
 
 nav:
   - Home: index.md
   - Standards:
-      - standards/index.md
-      - FHIR: standards/fhir.md
-      - FHIR canonical artifacts: standards/fhir/canonical/index.md
-      - HL7: standards/hl7.md
-      - WHO: standards/who.md
-      - DHIS2: standards/dhis2.md
-  - Templates: template-library/index.md
+      - Overview: standards/index.md
+      - FHIR R5 Core: standards/fhir.md
+      - FHIR Canonical Artifacts: standards/fhir/canonical/index.md
+      - HL7 Clinical Concepts: standards/hl7.md
+      - WHO ICD-11 & PEN/HEARTS: standards/who.md
+      - DHIS2 Aggregate & Tracker: standards/dhis2.md
+  - Templates:
+      - Primary Care Register Catalog: template-library/index.md
   - Models:
-      - Platform blueprint: models/platform-blueprint.md
-      - Diagram color semantics: models/diagram-color-semantics.md
-      - FHIR server spike: models/fhir-server-spike.md
-  - Glossary: glossary.md
+      - Platform Blueprint: models/platform-blueprint.md
+      - Diagram Color Semantics: models/diagram-color-semantics.md
+      - FHIR Server Spike: models/fhir-server-spike.md
+  - Terminology & Glossary: glossary.md

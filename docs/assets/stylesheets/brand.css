@@ -1,47 +1,454 @@
+/* ==========================================================================
+   CPI BANGLADESH MISSION CONTROL — MASTER BRAND STYLESHEET
+   Community Partners International (CPI) Official Style Guide & Visual Standards
+   Official Tagline: "Empower communities. Transform lives."
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 :root {
-  --md-primary-fg-color: #D91E4D;
-  --md-primary-fg-color--dark: #41273B;
-  --md-accent-fg-color: #615E9B;
-  --cpi-black: #2D2926;
-  --cpi-mid-grey: #948794;
-  --cpi-light-grey: #D0C4C5;
+  /* CPI Official Color Palette */
+  --cpi-red: #D91E4D;          /* Primary Accent, H1, Callouts, Primary Buttons */
+  --cpi-purple: #41273B;       /* Logo Mark, H2/H3, Table Headers, Cover Backgrounds */
+  --cpi-black: #2D2926;        /* Body Text, High-Contrast Reading */
+  --cpi-mid-grey: #948794;     /* Captions, Subtext, Footer, Table Gridlines */
+  --cpi-light-grey: #D0C4C5;   /* Alternating Table Fill (30%), Card Borders */
+  --cpi-blue: #4298B5;         /* WASH, Clean Energy, Auxiliary Accent, Link Highlights */
+  --cpi-sec-purple: #615E9B;   /* Architecture Models, Secondary Callout Badges */
+  --cpi-bg: #FBF9FA;           /* Page Canvas Tint */
+  --cpi-card-bg: #FFFFFF;      /* Card Canvas */
+
+  /* MkDocs Material Theme Variables Overrides */
+  --md-primary-fg-color: #41273B;
+  --md-primary-fg-color--dark: #2D2926;
+  --md-primary-bg-color: #FFFFFF;
+  --md-accent-fg-color: #D91E4D;
+  --md-accent-fg-color--transparent: rgba(217, 30, 77, 0.1);
+  --md-text-font-family: 'Raleway', 'Arial', sans-serif;
+  --md-code-font-family: 'JetBrains Mono', monospace;
 }
 
-.md-header {
-  background-color: #41273B;
+[data-md-color-scheme="slate"] {
+  --cpi-bg: #1B171A;
+  --cpi-card-bg: #272226;
+  --cpi-black: #EBE7EA;
+  --md-primary-fg-color: #272226;
+  --md-accent-fg-color: #D91E4D;
 }
 
-.md-footer {
-  background-color: #2D2926;
+/* Base Body & Typography Hierarchy */
+body, .md-typeset {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: var(--cpi-black);
+  background-color: var(--cpi-bg);
+  line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #41273B;
+.md-typeset h1 {
+  color: var(--cpi-red) !important;
+  font-weight: 800 !important;
+  font-size: 2rem !important;
+  line-height: 1.25 !important;
+  border-bottom: 2.5px solid var(--cpi-red) !important;
+  padding-bottom: 0.4rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
-.md-typeset table th {
-  background-color: #41273B;
-  color: #FFFFFF;
+.md-typeset h2 {
+  color: var(--cpi-purple) !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  border-bottom: 1px solid var(--cpi-light-grey) !important;
+  padding-bottom: 0.3rem !important;
 }
 
-.md-typeset a {
-  color: #D91E4D;
+.md-typeset h3 {
+  color: var(--cpi-purple) !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.md-typeset h4 {
+  color: var(--cpi-sec-purple) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+}
+
+.md-typeset p, .md-typeset ul, .md-typeset ol {
+  font-size: 0.95rem;
+  color: var(--cpi-black);
+  margin-bottom: 1rem;
 }
 
 .md-typeset code {
-  color: #41273B;
+  font-family: 'JetBrains Mono', monospace !important;
+  background-color: rgba(65, 39, 59, 0.06);
+  color: var(--cpi-purple);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  border: 1px solid rgba(208, 196, 197, 0.5);
 }
 
-.md-typeset .admonition.note {
-  border-color: #4298B5;
+/* Header & Navigation Bar */
+.md-header {
+  background-color: var(--cpi-purple) !important;
+  border-bottom: 3px solid var(--cpi-red) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
 }
 
-.legend {
-  font-size: 0.8rem;
+.md-tabs {
+  background-color: #321E2E !important;
+  border-bottom: 1px solid rgba(217, 30, 77, 0.3) !important;
+}
+
+.md-tabs__link {
+  font-weight: 600 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.3px !important;
+  text-transform: uppercase !important;
+  opacity: 0.85 !important;
+}
+
+.md-tabs__link--active, .md-tabs__link:hover {
+  opacity: 1 !important;
+  color: #FFFFFF !important;
+  border-bottom: 2px solid var(--cpi-red) !important;
+}
+
+/* HERO SECTION BANNER */
+.cpi-hero {
+  background: linear-gradient(135deg, #41273B 0%, #2D2926 70%, #1A1719 100%);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--cpi-red);
+  box-shadow: 0 10px 25px rgba(65, 39, 59, 0.2);
+}
+
+.cpi-hero::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(217, 30, 77, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cpi-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background-color: rgba(217, 30, 77, 0.2);
+  border: 1px solid rgba(217, 30, 77, 0.5);
+  color: #FF85A2;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.cpi-hero-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.cpi-hero-title span {
+  color: var(--cpi-red);
+}
+
+.cpi-hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--cpi-light-grey);
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.cpi-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.cpi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.cpi-btn-primary {
+  background-color: var(--cpi-red);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 10px rgba(217, 30, 77, 0.3);
+}
+
+.cpi-btn-primary:hover {
+  background-color: #B5143C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(217, 30, 77, 0.4);
+}
+
+.cpi-btn-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cpi-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* BENTO GRID & FEATURE CARDS */
+.cpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.cpi-card {
+  background-color: var(--cpi-card-bg);
+  border-radius: 12px;
+  padding: 1.4rem;
+  border: 1px solid var(--cpi-light-grey);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cpi-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(65, 39, 59, 0.08);
+  border-color: var(--cpi-sec-purple);
+}
+
+.cpi-card-red { border-top: 4px solid var(--cpi-red); }
+.cpi-card-purple { border-top: 4px solid var(--cpi-purple); }
+.cpi-card-blue { border-top: 4px solid var(--cpi-blue); }
+.cpi-card-sec { border-top: 4px solid var(--cpi-sec-purple); }
+
+.cpi-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.cpi-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--cpi-purple);
+  margin: 0 !important;
+}
+
+.cpi-card-desc {
+  font-size: 0.88rem;
+  color: var(--cpi-black);
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.cpi-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--cpi-red);
+  text-decoration: none !important;
+}
+
+.cpi-card-link:hover {
+  text-decoration: underline !important;
+}
+
+/* METRIC HIGHLIGHT PILLS */
+.cpi-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cpi-metric-box {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-center: center;
+  border: 1px solid var(--cpi-light-grey);
+  border-left: 4px solid var(--cpi-red);
+}
+
+.cpi-metric-val {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--cpi-purple);
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1;
+}
+
+.cpi-metric-lbl {
+  font-size: 0.78rem;
+  font-weight: 700;
   color: var(--cpi-mid-grey);
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+  letter-spacing: 0.5px;
+}
+
+/* TABLES STYLING (CPI High Contrast Rules) */
+.md-typeset table:not([class]) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.88rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--cpi-light-grey);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--cpi-purple) !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1rem !important;
+  border: none !important;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.65rem 1rem !important;
+  border-bottom: 1px solid rgba(208, 196, 197, 0.4) !important;
+  color: var(--cpi-black);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(208, 196, 197, 0.18) !important;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: rgba(217, 30, 77, 0.04) !important;
+}
+
+/* ADMONITION CALLOUT BOXES */
+.md-typeset .admonition {
+  border-radius: 10px !important;
+  border-width: 0 0 0 4px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+  margin: 1.5rem 0 !important;
+  font-size: 0.9rem !important;
+}
+
+/* Warning & Danger Callouts -> CPI Red */
+.md-typeset .admonition.warning,
+.md-typeset .admonition.danger {
+  border-left-color: var(--cpi-red) !important;
+  background-color: rgba(217, 30, 77, 0.05) !important;
+}
+
+.md-typeset .admonition.warning .admonition-title,
+.md-typeset .admonition.danger .admonition-title {
+  background-color: rgba(217, 30, 77, 0.12) !important;
+  color: var(--cpi-red) !important;
+  font-weight: 700 !important;
+}
+
+/* Note & Protocol Callouts -> CPI Purple */
+.md-typeset .admonition.note,
+.md-typeset .admonition.info {
+  border-left-color: var(--cpi-purple) !important;
+  background-color: rgba(65, 39, 59, 0.04) !important;
+}
+
+.md-typeset .admonition.note .admonition-title,
+.md-typeset .admonition.info .admonition-title {
+  background-color: rgba(65, 39, 59, 0.1) !important;
+  color: var(--cpi-purple) !important;
+  font-weight: 700 !important;
+}
+
+/* WASH & Technical Callouts -> CPI Blue */
+.md-typeset .admonition.abstract,
+.md-typeset .admonition.tip {
+  border-left-color: var(--cpi-blue) !important;
+  background-color: rgba(66, 152, 181, 0.06) !important;
+}
+
+.md-typeset .admonition.abstract .admonition-title,
+.md-typeset .admonition.tip .admonition-title {
+  background-color: rgba(66, 152, 181, 0.12) !important;
+  color: #1F6B85 !important;
+  font-weight: 700 !important;
+}
+
+/* MERMAID DIAGRAM CONTAINER */
+.mermaid {
+  background-color: #FDFCFD !important;
+  border: 1px solid var(--cpi-light-grey) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
+  text-align: center;
+}
+
+/* FOOTER BRANDING */
+.md-footer {
+  background-color: var(--cpi-black) !important;
+  color: var(--cpi-mid-grey) !important;
+  border-top: 4px solid var(--cpi-red) !important;
+}
+
+.md-footer-meta {
+  background-color: #1F1C1A !important;
+}
+
+.md-footer-meta__inner {
+  font-size: 0.82rem !important;
+  color: var(--cpi-mid-grey) !important;
+}
+
+.md-footer a {
+  color: var(--cpi-blue) !important;
+}
+
+.md-footer a:hover {
+  color: var(--cpi-red) !important;
 }
